@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>HTML saker</title>
+	<meta charset="utf-8" />
+    <meta name="description" content="Mer HTML">
+    <meta name="keywords" content="html,taggar">
+    <meta name="author" content="Magnus Weidmar">
+</head>
+<body>
+    <header>
+        <h1>Mer om HTML5</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Intressen</a>
+                    <ul>
+                        <li><a href="index.html#musik">Musik</a></li>
+                        <li><a href="index.html#knut">Knut</a></li>
+                        <li><a href="index.html#resor">Resor</a></li>
+                    </ul>
+                </li>
+                <li><a href="filmen.html">Filmen</a></li>
+                <li><a href="ljudet.html">Ljudet</a></li>
+                <li><a href="html5.html">HTML5</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <audio autoplay="autoplay">
+            <source src="media/NeonHeart-EndlessGrace.mp3" type="audio/mpeg" />
+        </audio>
+        <h2>HTML5</h2>
+        <section>
+            <h3>HTML structural</h3>
+            <p>HTML byggs genom en rad element eller taggar. Taggarna öppnas och stängs och innehållet skrivs mellan öppnad och stängd tagg. Taggar kan ha egenskaper som anpassar dessa, vidare kan man sätta id och classer på alla taggar för att göra det möjligt att nå dessa mer precist från t.ex javascript eller css</p>
+        </section>
+    </article>
+    <article>
+        <h2>Discover the tag world</h2>
+        <section>
+            <h3>&#60;abbr&#62; & &#60;blockquote&#62;</h3>
+            <h4>Abbr - abbreviation</h4>
+            <p>Använder man kring förkortningar</p>
+            <h4>Blockquote</h4>
+            <p>Använder man när man vill indentera ett citat.</p>
+        </section>
+        <section>
+            <h3>&#60;acronym&#62;</h3>
+            <p>Har blivit ersatt av abbr</p>
+        </section>
+        <section>
+            <h3>&#60;figcaption&#62;</h3>
+            <p>Används tillsammans med figure för att ge en bildtext till media</p>
+        </section>
+        <section>
+            <h3>&#60;del&#62; & &#60;ins&#62; & &#60;s&#62; </h3>
+            <h4>del & ins</h4>
+            <p>Används för att visa saker som <del>tagits bort</del> och vad det <int>ersatts med</int>.</p>
+            <h4>s</h4>
+            <p>Används för att visa att något inte längre gäller, tex ett <s>gammalt pris</s>. </p>
+        </section>
+        <section>
+            <h3>&#60;table&#62; & &#60;col&#62; & &#60;colgroup&#62; & &#60;tr&#62; & &#60;th&#62;</h3>
+            <h4>table</h4>
+            <p>Initierar en table, använd border egenskap om den inte skall användas för layout</p>
+            <h4>col</h4>
+            <p>Är child till colgroup och representerar varje kolumn</p>
+            <h4>colgroup</h4>
+            <p>Initierar en grupp kolumner, använd span egenskapen för att sätta mängden kolumner.</p>
+            <h4>tr</h4>
+            <p>Skapar upp en ny rad</p>
+            <h4>th</h4>
+            <p>En cell för att skapa upp en header till tablen.</p>
+            <h5>scope</h5>
+            <p>specificerar var headern ska gälla</p>
+            <h5>colspan</h5>
+            <p>specificerar grannkolumner</p>
+            <h5>rowspan</h5>
+            <p>specificerar grannrader</p>
+            <h5>headers</h5>
+            <p>identifierar ett th element som </p>
+
+        </section>
+    </article>
+        <hr />
+        <footer>
+            <small>
+                <address>
+                    Mangus Weidmar <br />
+                    Drottninggatan 50 <br />
+                    252 21 HBG
+                </address>
+
+                helloworld.se &copy;
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>
+            </small>
+        </footer>
+</body>
+</html>
