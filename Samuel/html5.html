@@ -40,10 +40,13 @@
         <h2>Discover the tag world</h2>
         <section>
             <h3>&#60;abbr&#62; & &#60;blockquote&#62;</h3>
-            <h4>Abbr - abbreviation</h4>
-            <p>Använder man kring förkortningar</p>
+            <h4><abbr title="abbreviation">abbr</abbr></h4>
+            <p>Använder man för att ge en förklaring på förkortningar</p>
             <h4>Blockquote</h4>
-            <p>Använder man när man vill indentera ett citat.</p>
+            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+            </blockquote>
+            <p>Använder man när man vill indentera ett citat samt med egenskap att fylla i källa.</p>
         </section>
         <section>
             <h3>&#60;acronym&#62;</h3>
@@ -52,11 +55,15 @@
         <section>
             <h3>&#60;figcaption&#62;</h3>
             <p>Används tillsammans med figure för att ge en bildtext till media</p>
+            <figure>
+                <img src="images/CTF-Face.jpg" />
+                <figcaption>Unreal Tournament, CTF-FACE</figcaption>
+            </figure>
         </section>
         <section>
             <h3>&#60;del&#62; & &#60;ins&#62; & &#60;s&#62; </h3>
             <h4>del & ins</h4>
-            <p>Används för att visa saker som <del>tagits bort</del> och vad det <int>ersatts med</int>.</p>
+            <p>Används för att visa saker som <del>tagits bort</del> och vad det <ins>ersatts med</ins>.</p>
             <h4>s</h4>
             <p>Används för att visa att något inte längre gäller, tex ett <s>gammalt pris</s>. </p>
         </section>
@@ -67,36 +74,48 @@
             <h4>col</h4>
             <p>Är child till colgroup och representerar varje kolumn</p>
             <h4>colgroup</h4>
-            <p>Initierar en grupp kolumner, använd span egenskapen för att sätta mängden kolumner.</p>
+            <p>Initierar en grupp kolumner, använd span egenskapen för att sätta mängden kolumner som genereras med dess egenskaper.</p>
             <h4>tr</h4>
             <p>Skapar upp en ny rad</p>
             <h4>th</h4>
             <p>En cell för att skapa upp en header till tablen.</p>
-            <h5>scope</h5>
-            <p>specificerar var headern ska gälla</p>
-            <h5>colspan</h5>
-            <p>specificerar grannkolumner</p>
-            <h5>rowspan</h5>
-            <p>specificerar grannrader</p>
-            <h5>headers</h5>
-            <p>identifierar ett th element som </p>
+
+            <table border="1">
+                <colgroup>
+                    <col id="kolumn1" span="2" />
+                    <col id="kolumn2" span="1" />
+                </colgroup>
+                <tr>
+                    <th>th, en header</th>
+                    <th>th</th>
+                    <th>th</th>
+                </tr>
+                <tr>
+                    <td>varje cell är en td och varje rad är en tr</td>
+                    <td>td</td>
+                    <td>td</td>
+                </tr>
+            </table>
 
         </section>
     </article>
         <hr />
-        <footer>
-            <small>
-                <address>
-                    Mangus Weidmar <br />
-                    Drottninggatan 50 <br />
-                    252 21 HBG
-                </address>
+    <footer>
+    <address>
+        <small>
+            Mangus Weidmar <br />
+            Drottninggatan 50 <br />
+            252 21 HBG
+        </small>
+    </address>
+    <p>
+        helloworld.se &copy;
 
-                helloworld.se &copy;
-                <script type="text/javascript">
-                    document.write(new Date().getFullYear());
-                </script>
-            </small>
-        </footer>
+        <script type="text/javascript">
+                document.write(new Date().getFullYear());
+        </script>
+    </p>
+
+    </footer>
 </body>
 </html>
