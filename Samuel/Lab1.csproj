@@ -101,6 +101,7 @@
     <Content Include="images\5.jpeg" />
     <Content Include="images\6.jpeg" />
     <Content Include="images\CTF-Face.jpg" />
+    <Content Include="reciept.html" />
     <Content Include="scripts\js.js" />
     <Content Include="order.html" />
     <Content Include="shop.html" />
