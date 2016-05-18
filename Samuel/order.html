@@ -30,8 +30,10 @@
     </header>
     <article>
         <h2>Kassan</h2>
-        <section id="kundvagn">
-            <h3>Kundvagn</h3>
+        
+
+        <fieldset id="kundvagn">
+            <legend>Kundvagn</legend>
 
             <table>
                 <tr>
@@ -41,17 +43,72 @@
                     <th>Total</th>
                 </tr>
             </table>
-        </section>
+            <button onclick="removeFromCart()">Töm kundvagnen</button>
+        </fieldset>
 
-        <section>
-            <h3>Leveransinformation</h3>
-            <form action="#" name="myForm">
-            <input type="text" id="name" name="name" required/>
-            <input type="email" id="email" name="email" required/>
-            <input type="password" id="password" name="password" required />
-            </form>
+        <form action="#" name="myForm">
+            <fieldset>
+                <legend>Användare</legend>
 
-        </section>
+                <label for="anvandare">Användare:</label>
+                <input type="text" id="anvandare" name="anvandare" />
+                <br />
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email"/>
+                <br />
+                <label for="password">Lösenord:</label>
+                <input type="password" id="password" name="password" />
+
+            </fieldset>  
+                      
+            <fieldset>
+                <legend>Leveransadress</legend>
+                
+                <label for="namn">Namn:</label>
+                <input type="text" id="namn" name="namn" required/>
+                <br />
+                <label for="adress">Adress:</label>
+                <input type="text" id="adress" name="adress" required/>
+                <br />
+                <label for="postnummer">Postnummer:</label>
+                <input type="number" id="postnummer" name="postnummer" required/>
+                
+                <label for="stad">Stad:</label>
+                <input type="text" id="stad" name="stad" required/>
+                <br />
+                <label for="tel">Telefon:</label>
+                <input type="tel" id="tele" name="tele" />
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Fakturaadress</legend>
+
+                <label for="namn2">Namn:</label>
+                <input type="text" id="namn2" name="namn" />
+                <br />
+                <label for="adress2">Adress:</label>
+                <input type="text" id="adress2" name="adress" />
+                <br />
+                <label for="postnummer2">Postnummer:</label>
+                <input type="number" id="postnummer2" name="postnummer" />
+                <label for="stad">Stad:</label>
+                <input type="text" id="stad2" name="stad" />
+                <br />
+                <label for="tel2">Telefon:</label>
+                <input type="tel" id="tele2" name="tele" />
+                <br />
+                <label for="referens">Referens:</label>
+                <input type="tel" id="referens" name="referens" />
+           
+            </fieldset>
+            
+            <label for="bekrafta">Jag har läst och godkänt försäljningsvilkoren:</label>
+            <input type="checkbox" id="bekrafta" name="bekrafta" required />
+            <br />
+            <input type="submit" value="Beställ" />
+        </form>
+        
 
     </article>
     <hr />

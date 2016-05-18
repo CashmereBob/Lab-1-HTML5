@@ -35,8 +35,19 @@ function kassan() {
     kassa.appendChild(head);
 
     var foot = document.createElement("tr");
-    foot.innerHTML = '<td>' + totalAntal + '</td><td></td><td></td><td>' + totalPris + '</td>';
+    foot.innerHTML = '<td>' + totalAntal + '</td><td></td><td></td><td>' + totalPris + '</td><td>';
     kassa.appendChild(foot);
 
 }
 
+function removeFromCart() {
+    
+    for (var i = 0, len = 100; i < len; i++) {
+
+        sessionStorage.removeItem(i);
+
+    }
+
+    location.reload();
+
+}
