@@ -21,14 +21,22 @@ function kassan() {
 
         var produktArray = sessionStorage.getItem(sessionStorage.key(i)).split(",");
 
-        totalAntal += produktArray[0];
-        totalPris += produktArray[3];
+        totalAntal += parseInt(produktArray[0]);
+        totalPris += parseInt(produktArray[3]);
 
         var node = document.createElement("tr");
         node.innerHTML = '<td>' + produktArray[0] + '</td><td>' + produktArray[1] + '</td><td>' + parseInt(produktArray[2]) + '</td><td>' + produktArray[3] + '</td>';
 
         kassa.appendChild(node)   
     }
+
+    var head = document.createElement("tr");
+    head.innerHTML = '<th><p>----</p></th><th></th><th></th><th><p>----</p></th>';
+    kassa.appendChild(head);
+
+    var foot = document.createElement("tr");
+    foot.innerHTML = '<td>' + totalAntal + '</td><td></td><td></td><td>' + totalPris + '</td>';
+    kassa.appendChild(foot);
 
 }
 
