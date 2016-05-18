@@ -1,15 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <title>inbäddad media</title>
+    <title>Shop</title>
 	<meta charset="utf-8" />
-    <meta name="description" content=">Inbäddad media">
-    <meta name="keywords" content="media,film,ljud">
-    <meta name="author" content="Magnus Weidmar">
+    <script type="text/javascript" src="scripts/js.js"></script>
 </head>
-<body>
+<body onload="kassan()">
     <header>
-        <h1>Inbäddad media</h1>
+        <h1>Shop</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Intressen</a>
@@ -24,21 +22,28 @@
                 <li><a href="html5.html">HTML5</a></li>
                 <li><a href="shop.html">Shop</a>
                     <ul>
-                        <li><a href="order.html">Cart</a></li>
-                        <li><a href="reciept.html">Reciept</a></li>                     
+                        <li><a href="order.html">Cart</a></li>                  
                     </ul>
                 </li>
             </ul>
         </nav>
     </header>
     <article>
-        <h2>Inbäddad rulle</h2>
-        <video controls="controls">
-            <source src="media/Maldive3.mp4" type="video/mp4" />
-            <source src="media/Maldive3.ogv" type="video/ogg" />
-            <source src="media/Maldive3.webm" type="video/webm" />
-            Video som visar maldiverna.
-        </video>
+        <h2>Kassan</h2>
+        <section id="kundvagn">
+            <h3>Kundvagn</h3>
+
+            <table>
+                <tr>
+                    <th>Antal</th>
+                    <th>Produkt</th>
+                    <th>Pris</th>
+                    <th>Total</th>
+                </tr>
+            </table>
+
+        </section>
+
     </article>
     <hr />
     <footer>

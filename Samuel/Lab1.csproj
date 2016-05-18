@@ -94,7 +94,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\1.jpeg" />
+    <Content Include="images\2.jpeg" />
+    <Content Include="images\3.jpeg" />
+    <Content Include="images\4.jpeg" />
+    <Content Include="images\5.jpeg" />
+    <Content Include="images\6.jpeg" />
     <Content Include="images\CTF-Face.jpg" />
+    <Content Include="scripts\js.js" />
+    <Content Include="order.html" />
+    <Content Include="shop.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

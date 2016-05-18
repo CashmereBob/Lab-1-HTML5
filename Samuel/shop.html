@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Shop</title>
+	<meta charset="utf-8" />
+    <script type="text/javascript" src="scripts/js.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Intressen</a>
+                    <ul>
+                        <li><a href="index.html#musik">Musik</a></li>
+                        <li><a href="index.html#knut">Knut</a></li>
+                        <li><a href="index.html#resor">Resor</a></li>
+                    </ul>
+                </li>
+                <li><a href="filmen.html">Filmen</a></li>
+                <li><a href="ljudet.html">Ljudet</a></li>
+                <li><a href="html5.html">HTML5</a></li>
+                <li><a href="shop.html">Shop</a>
+                    <ul>
+                        <li><a href="order.html">Cart</a></li>                  
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <h2>Produkter</h2>
+
+        <table>
+            <tr>
+                <td>
+                    <fieldset id="1">
+                        <legend>Produkt 1</legend>
+                        <form name="1">
+                            <img src="images/1.jpeg" alt="produkt 1"/>
+                            <p>Bacon ipsum dolor amet beef tail bacon, jerky sausage biltong strip steak ham turkey.</p>
+                            <h3>1200 SEK</h3>
+                            <input type="number" value="1" required />
+                            <button onclick="addToCart(1)">Köp</button>
+                        </form>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Produkt 2</legend>
+                        <form action="#" name="2">
+                            <img src="images/2.jpeg" alt="produkt 2"/>
+                            <p>Bacon ipsum dolor amet beef tail bacon, jerky sausage biltong strip steak ham turkey.</p>
+                            <h3>1300 SEK</h3>
+                            <input id="produkt2" name="produkt2" type="number" value="1" required />
+                            <input type="submit" value="Köp"/>
+                        </form>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Produkt 3</legend>
+                        <form action="#" name="3">
+                            <img src="images/3.jpeg" alt="produkt 3"/>
+                            <p>Bacon ipsum dolor amet beef tail bacon, jerky sausage biltong strip steak ham turkey.</p>
+                            <h3>1400 SEK</h3>
+                            <input id="produkt3" name="produkt3" type="number" value="1" required />
+                            <input type="submit" value="Köp"/>
+                        </form>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Produkt 4</legend>
+                        <form action="#" name="4">
+                            <img src="images/4.jpeg" alt="produkt 4"/>
+                            <p>Bacon ipsum dolor amet beef tail bacon, jerky sausage biltong strip steak ham turkey.</p>
+                            <h3>1500 SEK</h3>
+                            <input id="produkt4" name="produkt4" type="number" value="1" required />
+                            <input type="submit" value="Köp"/>
+                        </form>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Produkt 5</legend>
+                        <form action="#" name="5">
+                            <img src="images/5.jpeg" alt="produkt 5"/>
+                            <p>Bacon ipsum dolor amet beef tail bacon, jerky sausage biltong strip steak ham turkey.</p>
+                            <h3>1600 SEK</h3>
+                            <input id="produkt5" name="produkt5" type="number" value="1" required />
+                            <input type="submit" value="Köp"/>
+                        </form>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Produkt 6</legend>
+                        <form action="#" name="6">
+                            <img src="images/6.jpeg" alt="produkt 6"/>
+                            <p>Bacon ipsum dolor amet beef tail bacon, jerky sausage biltong strip steak ham turkey.</p>
+                            <h3>1700 SEK</h3>
+                            <input id="produkt6" name="produkt6" type="number" value="1" required />
+                            <input type="submit" value="Köp"/>
+                        </form>
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+
+    </article>
+    <hr />
+    <footer>
+
+        <address>
+            <small>
+                Mangus Weidmar <br />
+                Drottninggatan 50 <br />
+                252 21 HBG
+            </small>
+        </address>
+        <p>
+            helloworld.se &copy;
+
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+        </p>
+
+    </footer>
+</body>
+</html>
