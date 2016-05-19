@@ -66,19 +66,19 @@ function kvitto() {
 
 
     var doc = document.getElementById("levadress");
-    doc.getElementsByTagName('p')[0].innerHTML = pair[3];
-    doc.getElementsByTagName('p')[1].innerHTML = pair[4];
-    doc.getElementsByTagName('p')[2].innerHTML = pair[5];
-    doc.getElementsByTagName('p')[3].innerHTML = pair[6];
-    doc.getElementsByTagName('p')[4].innerHTML = pair[7];
+    doc.getElementsByTagName('td')[0].innerHTML = pair[3];
+    doc.getElementsByTagName('td')[1].innerHTML = pair[4];
+    doc.getElementsByTagName('td')[2].innerHTML = pair[5];
+    doc.getElementsByTagName('td')[3].innerHTML = pair[6];
+    doc.getElementsByTagName('td')[4].innerHTML = pair[7];
 
     var doc2 = document.getElementById("faktadress");
-    doc2.getElementsByTagName('p')[0].innerHTML = pair[8];
-    doc2.getElementsByTagName('p')[1].innerHTML = pair[9];
-    doc2.getElementsByTagName('p')[2].innerHTML = pair[10];
-    doc2.getElementsByTagName('p')[3].innerHTML = pair[11];
-    doc2.getElementsByTagName('p')[4].innerHTML = pair[12];
-    doc2.getElementsByTagName('p')[5].innerHTML = pair[13];
+    doc2.getElementsByTagName('td')[0].innerHTML = pair[8];
+    doc2.getElementsByTagName('td')[1].innerHTML = pair[9];
+    doc2.getElementsByTagName('td')[2].innerHTML = pair[10];
+    doc2.getElementsByTagName('td')[3].innerHTML = pair[11];
+    doc2.getElementsByTagName('td')[4].innerHTML = pair[12];
+    doc2.getElementsByTagName('td')[5].innerHTML = pair[13];
 
     for (var i = 0, len = 100; i < len; i++) {
 
