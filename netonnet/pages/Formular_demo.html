@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <h1>Input of plenty!</h1>
+    <!--allt som ligger här postas till en annan sida-->
+    <form action="#" name="myform">
+        Namn:<input type="text" name="name" maxlength="10"  placeholder="Skriv namnet här" autofocus/><br />
+        Password:<input type="password" name="password" maxlength="16" placeholder="Password"/><br />
+        Färger:<br />
+        Röd:<input type="checkbox" name="farg" checked value="rod"/><br />
+        Grön:<input type="checkbox" name="farg" value="gron"/><br />
+        Blå:<input type="checkbox" name="farg" value="bla"/><br />
+        Kön:<br />
+        Han:<input type="radio" name="gender" value="han"/><br />
+        Hon:<input type="radio" name="gender" value="hon"/><br />
+        Hen:<input type="radio" name="gender" value="hen" disabled /><br />
+        Fargväljare: <input type="color" name="color"/><br />
+
+        <input name="sex" list="myList"/>
+        <datalist id="myList">
+            <option value="male">1234</option>
+            <option value="female">1234</option>
+            <option value="androgyne">1234</option>
+        </datalist>
+
+        <select name="dropdown">
+            <optgroup label="Ord">
+                <option value="hepp">Hepp</option>
+                <option value="hopp">Hopp</option>
+                <option value="kopp">Kopp</option>
+            </optgroup>
+            <optgroup label="Sifforor">
+                <option value="12">12</option>
+                <option value="34">34</option>
+                <option value="98">98</option>
+            </optgroup>
+        </select>
+
+        <input type="submit"/>
+    </form>
+</body>
+</html>
